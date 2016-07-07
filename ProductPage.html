@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Eco|Foods - Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="style.css" />
+     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style></head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+  
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="img_avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4 class="w3-padding-0"><b>Eco Foods</b></h4>
+    <p class="w3-text-grey">The Smarter Way to Buy Groceries</p>
+  </div>
+  <a href="#" class="w3-padding w3-text-teal">RECCOMENDATION</a>
+  <a href="#" class="w3-padding">ABOUT</a>
+  <a href="#" class="w3-padding">SHOPPING LIST</a>
+  <a href="#" class="w3-padding">SEARCH</a>
+  <a href="#" class="w3-padding">CONTACT</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-grey w3-show-inline-block"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+    
+   
+
+  <!-- Header -->
+  <header class="w3-container">
+    <a href="#"><img src="img_avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>Product Name Here</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right"></span>
+   
+    </div>
+  </header>
+  
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/-Insert_image_here-.svg/2000px--Insert_image_here-.svg.png" width="400" height="400">
+    
+    <h2>Enter Price Here</h2>
+    <p>   </p>
+    <p>   </p>
+    <h3>Enter Rating Here</h2>
+    <p>   </p>
+    <p>   </p>
+    <h3 id="addressNew">Enter Address Here</h2>
+    <p>   </p>
+    <p>   </p>
+    <h3>An Uber Ride Would Cost:</h3>
+    <script>
+    import requests
+
+url = 'https://api.uber.com/v1/price'
+
+parameters = {
+    'server_token': 'INSERT_SERVER_TOKEN_HERE',
+    'latitude': 37.775818,
+    'longitude': -122.418028,
+}
+
+response = requests.get(url, params=parameters)
+
+data = response.json()
+
+    </script>
+    
+    
+    
+
+  <!-- Footer -->
+ <footer class="w3-container w3-padding-32 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>Twitter Feed</h3>
+                    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/EcoFoodsWebsite" data-widget-id="750750998671532032">#EcoFoodsWebsite Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+     
+    </div>
+  
+    <div class="w3-third">
+      <h3>UPDATES</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="img_workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="img_gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR STORES AROUND YOU</h3>
+      <p>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Walmart</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Metro</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sobeys</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fortinos</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">No Frills</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Food Basics</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Longos</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Whole Foods</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bulk Barn</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Costco</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Wesdale Food Market</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hasty Market</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Tan Thanh Supermarket</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">B & T Foods</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
