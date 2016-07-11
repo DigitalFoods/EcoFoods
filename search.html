@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>Eco|Foods - The Economical Way to buy Groceries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="ECO-1.png" style="width:45%;" class="w3-round"><br><br>
+    <h4 class="w3-padding-0"><b>ECO FOODS</b></h4>
+    <p class="w3-text-grey">The Smart Way to Buy Groceries</p>
+  </div>
+  <a href="#" class="w3-padding w3-text-teal">RECCOMENDATIONS
+    </a>
+  <a href="#" class="w3-padding">ABOUT</a>
+  <a href="#" class="w3-padding">SHOPPING LIST</a>
+  <a href="#" class="w3-padding">SEARCH</a>
+  <a href="website-contact_page.html" class="w3-padding">CONTACT</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-pinterest-p"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-grey w3-show-inline-block"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <headers class="w3-container">
+    <a href="#"><img src="ECO-1.png" style="width:150px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><b>Reccomendation</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span>
+      <button class="w3-btn">ALL</button>
+      <button type="button" onclick="location.href='http://google.com';"<i class="w3-btn w3-white"><i class="fa fa-diamond w3-margin-right"></i>High Rated</button>
+       <button type="button" onclick="location.href='http://google.com';"<i class="w3-btn w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Under 10km</button>
+      <button type="button" onclick="location.href='http://google.com';"<i class="w3-btn w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Organic</button>
+    </div>
+  </header>
+  
+<style>
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+   
+    font-size: 24px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+</style>
+</head>
+<body>
+
+<p>Search for your food :</p>
+
+<form>
+  <input type="text" name="search" placeholder="Search for Awesome Food Memes MLG">
+</form>
+</html>
